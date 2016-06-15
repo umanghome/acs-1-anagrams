@@ -9,7 +9,17 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ca5fb63-fbec-410d-8772-7243ddfce742" name="Default" comment="" />
+    <list default="true" id="6ca5fb63-fbec-410d-8772-7243ddfce742" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/google/engedu/anagrams/AnagramDictionary.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/google/engedu/anagrams/AnagramDictionary.java" />
+    </list>
     <ignored path="acs-1-anagrams.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,16 +54,17 @@
       <file leaf-file-name="AnagramDictionary.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/google/engedu/anagrams/AnagramDictionary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.61318684">
-              <caret line="213" column="4" selection-start-line="213" selection-start-column="4" selection-end-line="213" selection-end-column="4" />
+            <state vertical-scroll-proportion="-0.5472528">
+              <caret line="216" column="12" selection-start-line="216" selection-start-column="12" selection-end-line="216" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#AnagramDictionary#0;class#AnagramDictionary#0" expanded="false" />
+                <element signature="e#2743#2751#0" expanded="true" />
                 <element signature="method#isGoodWord#0;class#AnagramDictionary#0" expanded="false" />
                 <element signature="method#getAnagrams#0;class#AnagramDictionary#0" expanded="false" />
                 <element signature="method#sortLetters#0;class#AnagramDictionary#0" expanded="false" />
                 <element signature="method#getAnagramsWithOneMoreLetter#0;class#AnagramDictionary#0" expanded="false" />
-                <element signature="method#pickGoodStarterWord#0;class#AnagramDictionary#0" expanded="false" />
+                <element signature="e#6324#6332#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -2049,7 +2060,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298292" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298292" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2084,7 +2095,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -2105,11 +2118,12 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#AnagramDictionary#0;class#AnagramDictionary#0" expanded="false" />
+            <element signature="e#2743#2751#0" expanded="true" />
             <element signature="method#isGoodWord#0;class#AnagramDictionary#0" expanded="false" />
             <element signature="method#getAnagrams#0;class#AnagramDictionary#0" expanded="false" />
             <element signature="method#sortLetters#0;class#AnagramDictionary#0" expanded="false" />
             <element signature="method#getAnagramsWithOneMoreLetter#0;class#AnagramDictionary#0" expanded="false" />
-            <element signature="method#pickGoodStarterWord#0;class#AnagramDictionary#0" expanded="false" />
+            <element signature="e#6324#6332#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2134,16 +2148,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/google/engedu/anagrams/AnagramDictionary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61318684">
-          <caret line="213" column="4" selection-start-line="213" selection-start-column="4" selection-end-line="213" selection-end-column="4" />
+        <state vertical-scroll-proportion="-0.5472528">
+          <caret line="216" column="12" selection-start-line="216" selection-start-column="12" selection-end-line="216" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#AnagramDictionary#0;class#AnagramDictionary#0" expanded="false" />
+            <element signature="e#2743#2751#0" expanded="true" />
             <element signature="method#isGoodWord#0;class#AnagramDictionary#0" expanded="false" />
             <element signature="method#getAnagrams#0;class#AnagramDictionary#0" expanded="false" />
             <element signature="method#sortLetters#0;class#AnagramDictionary#0" expanded="false" />
             <element signature="method#getAnagramsWithOneMoreLetter#0;class#AnagramDictionary#0" expanded="false" />
-            <element signature="method#pickGoodStarterWord#0;class#AnagramDictionary#0" expanded="false" />
+            <element signature="e#6324#6332#0" expanded="true" />
           </folding>
         </state>
       </provider>

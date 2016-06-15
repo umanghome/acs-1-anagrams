@@ -23,6 +23,8 @@ public class AnagramDictionary {
     private ArrayList<String> wordList;
     private HashSet<String> wordSet;
     private HashMap<String, ArrayList<String>> lettersToWord;
+    private HashMap<Integer, ArrayList<String>> sizeToWords;
+    private int wordLength;
 
     public AnagramDictionary(InputStream wordListStream) throws IOException {
         BufferedReader in = new BufferedReader(new InputStreamReader(wordListStream));
@@ -31,6 +33,8 @@ public class AnagramDictionary {
         wordList = new ArrayList<String>();
         wordSet = new HashSet<String>();
         lettersToWord = new HashMap<String, ArrayList<String>>();
+        sizeToWords = new HashMap<Integer, ArrayList<String>>();
+        wordLength = DEFAULT_WORD_LENGTH;
 
         while((line = in.readLine()) != null) {
             String word = line.trim();
@@ -69,6 +73,18 @@ public class AnagramDictionary {
                 // Map anagrams to sortedWord
                 lettersToWord.put(sortedWord, anagrams);
 
+            }
+
+            // Add word to sizeToWords
+            int length = word.length();
+            if (sizeToWords.containsKey(length)) {
+                ArrayList<String> words = sizeToWords.get(length);
+                words.add(word);
+                sizeToWords.put(length, words);
+            } else {
+                ArrayList<String> words = new ArrayList<String>();
+                words.add(word);
+                sizeToWords.put(length, words);
             }
 
         }
@@ -194,21 +210,33 @@ public class AnagramDictionary {
 
         // Create empty randomWord
         String randomWord = "";
+        ArrayList<String> anagrams = new ArrayList<String>();
 
-        // Get randomWord until the word matches criteria
-        while (randomWord.length() < DEFAULT_WORD_LENGTH || randomWord.length() > MAX_WORD_LENGTH) {
-            randomWord = wordList.get(random.nextInt(wordList.size()));
+        // Iterate until we find a word with the number of anagrams that matches criteria
+        while (anagrams.size() < MIN_NUM_ANAGRAMS) {
+            
+            // Reset randomWord and anagrams
+            randomWord = "";
+            anagrams = new ArrayList<String>();
+
+            // Get randomWord until the word matches criteria
+            while (randomWord.length() != wordLength) {
+                randomWord = wordList.get(random.nextInt(wordList.size()));
+                Log.v("randomWord", randomWord);
+            }
+
+            // Get anagrams with one more letter of randomWord
+            anagrams = getAnagramsWithOneMoreLetter(randomWord);
+            Log.v("anagrams.size", new Integer(anagrams.size()).toString());
+
         }
 
-        // Get anagrams with one more letter of randomWord
-        ArrayList<String> anagrams = getAnagramsWithOneMoreLetter(randomWord);
-
-        // If number of anagrams doesn't match criteria, look for another word
-        if (anagrams.size() < MIN_NUM_ANAGRAMS) {
-            return pickGoodStarterWord();
-        } else {
-            return randomWord;
+        // Increment wordLength
+        if (wordLength != MAX_WORD_LENGTH) {
+            wordLength++;
         }
+
+        return randomWord;
 
     }
     
